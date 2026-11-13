@@ -1,0 +1,16 @@
+# NPM
+node_modules/**
+
+# Build
+stats.html
+dist/**/*
+package/**
+debug.log
+foundry.js
+.vite-cache
+
+# MacOS filesystem metadata
+.DS_Store
+
+# foundryvtt-cli
+fvttrc.yml

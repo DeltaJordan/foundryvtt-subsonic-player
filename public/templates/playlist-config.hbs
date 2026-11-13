@@ -1,0 +1,28 @@
+<section class="standard-form scrollable">
+	{{formGroup
+		fields.defaultPlaylistMode
+		value=config.defaultPlaylistMode
+		localize=true
+	}}
+	<fieldset>
+		<legend>{{localize "subsonic.playlist.blacklist.header"}}</legend>
+		<ul>
+			{{#each config.playlists as |p|}}
+				<li class="form-group">
+					<label>{{p.name}}</label>
+					<div class="form-fields">
+						<input
+							id="{{p.id}}"
+							type="checkbox"
+							name="{{p.id}}"
+							{{checked p.blacklisted}}
+						/>
+					</div>
+					<p class="hint">
+						{{localize "subsonic.playlist.blacklist.hint"}}
+					</p>
+				</li>
+			{{/each}}
+		</ul>
+	</fieldset>
+</section>

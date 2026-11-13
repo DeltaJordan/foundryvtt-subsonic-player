@@ -1,0 +1,58 @@
+{
+	"subsonic": {
+		"credentials": {
+			"menu": {
+				"title": "SubSonic Credentials",
+				"label": "SubSonic Credential Settings",
+				"hint": "Setup your SubSonic-API server credentials."
+			},
+			"serverUrl": {
+				"label": "SubSonic URL",
+				"hint": "Enter the URL of your SubSonic compatible server."
+			},
+			"username": {
+				"label": "SubSonic Username",
+				"hint": "Enter the username to your subsonic server."
+			},
+			"password": {
+				"label": "SubSonic Password",
+				"hint": "Enter the password to your subsonic server."
+			}
+		},
+		"playlist": {
+			"menu": {
+				"title": "SubSonic Playlists",
+				"label": "SubSonic Playlist Settings",
+				"hint": "Modify playlist defaults and blacklist."
+			},
+			"defaultPlaylistMode": {
+				"label": "Default Playlist Mode",
+				"hint": "Select the default mode playlists are set to when syncing with Subsonic."
+			},
+			"blacklist": {
+				"header": "Blacklist Options",
+				"hint": "Blacklist this playlist from being synced."
+			}
+		},
+		"login": {
+			"error": "Failed to login to the SubSonic server."
+		},
+		"sync": {
+			"playlists": {
+				"progress": "Syncing playlists, please wait...",
+				"none": "The SubSonic server returned no playlists."
+			},
+			"playlist": {
+				"failed": "Playlist '{playlistName}' failed to load songs."
+			}
+		},
+		"create": {
+			"playlist": {
+				"failed": "Failed to create FoundryVTT playlist for Subsonic playlist '{playlistName}'."
+			},
+			"song": {
+				"failed": "Failed to create FoundryVTT sound for Subsonic song '{songTitle}' in Subsonic playlist '{playlistName}'."
+			}
+		}
+	}
+}
