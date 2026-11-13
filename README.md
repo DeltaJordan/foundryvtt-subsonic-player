@@ -1,3 +1,3 @@
-# SubSonic Music Player for FoundryVTT
+# Subsonic Music Player for FoundryVTT
 
-A Foundry VTT module to play synchronized music using a SubSonic-API compatible server (e.g. Navidrome).
+A Foundry VTT module to play synchronized music using a Subsonic-API compatible server (e.g. Navidrome).

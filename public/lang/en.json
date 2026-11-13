@@ -2,27 +2,27 @@
 	"subsonic": {
 		"credentials": {
 			"menu": {
-				"title": "SubSonic Credentials",
-				"label": "SubSonic Credential Settings",
-				"hint": "Setup your SubSonic-API server credentials."
+				"title": "Subsonic Credentials",
+				"label": "Subsonic Credential Settings",
+				"hint": "Setup your Subsonic-API server credentials."
 			},
 			"serverUrl": {
-				"label": "SubSonic URL",
-				"hint": "Enter the URL of your SubSonic compatible server."
+				"label": "Subsonic URL",
+				"hint": "Enter the URL of your Subsonic compatible server."
 			},
 			"username": {
-				"label": "SubSonic Username",
+				"label": "Subsonic Username",
 				"hint": "Enter the username to your subsonic server."
 			},
 			"password": {
-				"label": "SubSonic Password",
+				"label": "Subsonic Password",
 				"hint": "Enter the password to your subsonic server."
 			}
 		},
 		"playlist": {
 			"menu": {
-				"title": "SubSonic Playlists",
-				"label": "SubSonic Playlist Settings",
+				"title": "Subsonic Playlists",
+				"label": "Subsonic Playlist Settings",
 				"hint": "Modify playlist defaults and blacklist."
 			},
 			"defaultPlaylistMode": {
@@ -35,12 +35,12 @@
 			}
 		},
 		"login": {
-			"error": "Failed to login to the SubSonic server."
+			"error": "Failed to login to the Subsonic server."
 		},
 		"sync": {
 			"playlists": {
 				"progress": "Syncing playlists, please wait...",
-				"none": "The SubSonic server returned no playlists."
+				"none": "The Subsonic server returned no playlists."
 			},
 			"playlist": {
 				"failed": "Playlist '{playlistName}' failed to load songs."

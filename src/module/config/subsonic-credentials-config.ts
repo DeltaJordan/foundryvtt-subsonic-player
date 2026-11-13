@@ -11,7 +11,7 @@ interface RenderOptions
 	loadEmpty: boolean;
 }
 
-export class SubSonicCredentialConfig extends HandlebarsApplicationMixin(
+export class SubsonicCredentialConfig extends HandlebarsApplicationMixin(
 	ApplicationV2<{}, Configuration, RenderOptions>,
 ) {
 	static PARTS = {
@@ -43,7 +43,7 @@ export class SubSonicCredentialConfig extends HandlebarsApplicationMixin(
 	};
 
 	static async #formHandler(
-		this: SubSonicCredentialConfig,
+		this: SubsonicCredentialConfig,
 		_ev: unknown,
 		_form: unknown,
 		formData: any,
@@ -66,7 +66,7 @@ export class SubSonicCredentialConfig extends HandlebarsApplicationMixin(
 		);
 		const ctx = {
 			config: options.loadEmpty
-				? new SubSonicCredentialOptions()
+				? new SubsonicCredentialOptions()
 				: config,
 			fields: config.schema.fields,
 			buttons: [
@@ -89,20 +89,20 @@ export class SubSonicCredentialConfig extends HandlebarsApplicationMixin(
 		return ctx;
 	}
 
-	static async #loadEmpty(this: SubSonicCredentialConfig) {
+	static async #loadEmpty(this: SubsonicCredentialConfig) {
 		this.render(false, { loadEmpty: true });
 	}
 }
 
-interface SubSonicCredentialOptionsSchema
+interface SubsonicCredentialOptionsSchema
 	extends foundry.data.fields.DataSchema {
 	serverUrl: fields.StringField<{ initial: "https://demo.navidrome.org" }>;
 	username: fields.StringField<{ initial: "" }>;
 	password: fields.StringField<{ initial: "" }>;
 }
 
-export class SubSonicCredentialOptions extends foundry.abstract
-	.DataModel<SubSonicCredentialOptionsSchema> {
+export class SubsonicCredentialOptions extends foundry.abstract
+	.DataModel<SubsonicCredentialOptionsSchema> {
 	static defineSchema(): fields.DataSchema {
 		const fields = foundry.data.fields;
 		return {

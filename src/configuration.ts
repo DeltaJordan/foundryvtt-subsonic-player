@@ -1,15 +1,15 @@
-import type { SubSonicCredentialOptions } from "./module/config/subsonic-credentials-config";
+import type { SubsonicCredentialOptions } from "./module/config/subsonic-credentials-config";
 import type { SubsonicPlaylistOptions } from "./module/config/subsonic-playlist-config";
-import type SubSonicPlaylistSound from "./module/playlist/subsonic-playlist-sound";
+import type SubsonicPlaylistSound from "./module/playlist/subsonic-playlist-sound";
 
 declare module "fvtt-types/configuration" {
 	interface SettingConfig {
-		"foundryvtt-subsonic-player.subsonic-credentials-options": typeof SubSonicCredentialOptions;
+		"foundryvtt-subsonic-player.subsonic-credentials-options": typeof SubsonicCredentialOptions;
 		"foundryvtt-subsonic-player.subsonic-playlist-options": typeof SubsonicPlaylistOptions;
 	}
 
 	interface DocumentClassConfig {
-		PlaylistSound: typeof SubSonicPlaylistSound;
+		PlaylistSound: typeof SubsonicPlaylistSound;
 	}
 
 	interface FlagConfig {

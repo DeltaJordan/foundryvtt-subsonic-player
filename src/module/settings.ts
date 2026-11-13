@@ -1,6 +1,6 @@
 import {
-	SubSonicCredentialConfig,
-	SubSonicCredentialOptions,
+	SubsonicCredentialConfig,
+	SubsonicCredentialOptions,
 } from "./config/subsonic-credentials-config";
 import {
 	SubsonicPlaylistConfig,
@@ -18,7 +18,7 @@ export const registerSettings = function () {
 			label: "subsonic.credentials.menu.label",
 			hint: "subsonic.credentials.menu.hint",
 			icon: "fa-solid fa-id-card",
-			type: SubSonicCredentialConfig,
+			type: SubsonicCredentialConfig,
 			restricted: true,
 		},
 	);
@@ -29,8 +29,8 @@ export const registerSettings = function () {
 		{
 			scope: "world",
 			config: false,
-			type: SubSonicCredentialOptions,
-			default: new SubSonicCredentialOptions(),
+			type: SubsonicCredentialOptions,
+			default: new SubsonicCredentialOptions(),
 			requiresReload: true,
 		},
 	);

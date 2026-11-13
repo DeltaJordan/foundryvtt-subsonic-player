@@ -1,7 +1,7 @@
 import ClientDocumentMixin = foundry.documents.abstract.ClientDocumentMixin;
 import fields = foundry.data.fields;
 
-export default class SubSonicPlaylistSound extends PlaylistSound {
+export default class SubsonicPlaylistSound extends PlaylistSound {
 	get streamUrl(): string {
 		return this.getFlag("foundryvtt-subsonic-player", "stream_url");
 	}

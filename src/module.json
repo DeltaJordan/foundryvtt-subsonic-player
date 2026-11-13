@@ -1,7 +1,7 @@
 {
 	"id": "foundryvtt-subsonic-player",
-	"title": "SubSonic Music Player for Foundry VTT",
-	"description": "A Foundry VTT module to play synchronized music using a SubSonic-API compatible server (e.g. Navidrome).",
+	"title": "Subsonic Music Player for Foundry VTT",
+	"description": "A Foundry VTT module to play synchronized music using a Subsonic-API compatible server (e.g. Navidrome).",
 	"version": "1.0.0",
 	"compatibility": {
 		"minimum": "14",

@@ -2,7 +2,7 @@ import SubsonicAPI from "subsonic-api";
 import { registerSettings } from "./module/settings";
 import { getGame } from "./module/util/game";
 
-import SubSonicPlaylistSound, {
+import SubsonicPlaylistSound, {
 	extendPlaylistSoundConfig,
 } from "./module/playlist/subsonic-playlist-sound";
 import "./subsonic-player.scss";
@@ -48,7 +48,7 @@ async function syncPlaylists(api: SubsonicAPI): Promise<void> {
 	const newSubsonicFolder = await Folder.create({
 		color: "#0084ff",
 		description:
-			"Folder for SubSonic playlists. NOTE: Any playlists added to this folder will be deleted during the next sync!",
+			"Folder for Subsonic playlists. NOTE: Any playlists added to this folder will be deleted during the next sync!",
 		name: "Subsonic Playlists",
 		sorting: "a",
 		type: "Playlist",
@@ -112,7 +112,7 @@ async function syncPlaylists(api: SubsonicAPI): Promise<void> {
 				maxBitRate: 320,
 			});
 
-			const subsonicSound = new SubSonicPlaylistSound({
+			const subsonicSound = new SubsonicPlaylistSound({
 				name: song.title,
 				description: song.comment,
 				path: "placeholder.ogg", // TODO: Is there a better way to skip field validation?
@@ -187,7 +187,7 @@ Hooks.once("init", () => {
 		return value && value === "true";
 	});
 
-	CONFIG.PlaylistSound.documentClass = SubSonicPlaylistSound;
+	CONFIG.PlaylistSound.documentClass = SubsonicPlaylistSound;
 
 	registerSettings();
 });
@@ -217,7 +217,7 @@ Hooks.once("ready", async () => {
 		}
 
 		console.log(
-			`Successfully logged in to SubSonic server ${credentials.serverUrl}`,
+			`Successfully logged in to Subsonic server ${credentials.serverUrl}`,
 		);
 
 		await syncPlaylists(api);
